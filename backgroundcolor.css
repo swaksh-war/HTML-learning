@@ -5,3 +5,19 @@ p {
     color: red;
     text-align: center;
   }
+  blockquote{
+    color: deeppink;
+    text-align: center;
+  }
+  h1{
+      text-align: center;
+      color: rgb(0, 64, 128);
+  }
+  h2{
+    text-align: center;
+    color: chartreuse;
+  }
+  h3{
+    text-align: center;
+    color: darkslateblue;
+  }
