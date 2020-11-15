@@ -21,3 +21,8 @@ p {
     text-align: center;
     color: darkslateblue;
   }
+  .center{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
