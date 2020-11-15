@@ -13,9 +13,15 @@ p {
       text-align: center;
       color: rgb(0, 64, 128);
   }
+  /*
   h2{
     text-align: center;
-    color: chartreuse;
+    color: rgb(25, 0, 255);
+  }
+  */
+  h2#text1{
+    text-align: center;
+    color: rgb(25, 0, 255);
   }
   h3{
     text-align: center;
