@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            details>summary{
+                padding:4px;
+                width:200px;
+                background-color:rgb(255,255,0);
+                border: none;
+                box-shadow: 1px 1px 2px #bbbbbb
+            }
+        </style>
+        Table
+    </head>
+    <body>
+        <div class="tble">
+            <table style="border:20px; padding:20px;">
+                Gun Table
+                <colgroup>
+                    <col class="col1" span="2" style="background-color:blue;color:brown;">
+                    <col style="background-color:yellow;color:black;">
+                </colgroup>
+                <thead>
+                <tr>
+                    <th id="name">Gun name</th>
+                    <th id="dmg">Damage</th>
+                    <th id="price">Price</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Usp-S</td>
+                    <td>16</td>
+                    <td>$200</td>
+                </tr>
+                <tr>
+                    <td>Awp</td>
+                    <td>108</td>
+                    <td>$4750</td>
+                </tr>
+                <tr>
+                    <td>Ak-47</td>
+                    <td>27</td>
+                    <td>$2700</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="opt">
+            <form action="google.com" method="GET">
+                <label for="rowsebr">Choose your browser from the list </label>
+                <input list="browsers" name="browser" id="browser">
+                <datalist id="browsers">
+                    <option value="Edge">Edge</option>
+                    <option value="chrome">Chrome</option>
+                    <option value="opera">Opera</option>
+                </datalist>
+                <input type="submit">
+            </form>
+        </div>
+        <details>
+            <summary>Ashu</summary>
+            <p>Basically chutiya.. But Still bhai hai mera</p>
+        </details>
+        <dialog open="open">iye dukh kahe khatam nahi hoti hai</dialog>
+    </body>
+</html>
