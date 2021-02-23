@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            h3{
+                text-shadow: 2px 2px 3px  blue;
+                text-align: center;
+            }
+            #text{
+                font-size: 24px;
+                text-align:center;
+                margin:30px;
+            }
+            .box{
+                width:300px;
+                height:200px;
+                background-color:rgb(121, 122, 122);
+                margin-left:40%;
+                margin-right:40%;
+                box-shadow: inset 0 0 50px black;
+            }
+            .animate{
+                width: 60px;
+                height: 30px;
+                background-color:rgb(0, 225, 255);
+                text-align: center;
+                border-radius:5px;
+                animation-name:one;
+                animation-duration:4s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+            }
+            @keyframes one{
+                0%{background-color:aqua;}
+                25%{background-color:red;}
+                50%{background-color: green;}
+                75%{background-color: yellow;}
+                100%{background-color: aqua;}
+            }
+            .random{
+                width:50px;
+                height:50px;
+                transform:scale(1)
+                background-image:linear-gradient(red,blue);
+                animation-name:two;
+                animation-duration:2s;
+                animation-timing-function: ease-in-out;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+                opacity: 1;
+                position:absolute;
+                top:50%;
+                left:50%;
+            }
+            @keyframes two{
+                0%{transform: scale(1);background-image: linear-gradient(red,blue);opacity:1;}
+                25%{opacity:0.5;}
+                50%{opacity:0;}
+                75%{opacity:0.5;}
+                100%{transform:scale(2);background-image:linear-gradient(blue,red);opacity:1;}
+            }
+        </style>
+    </head>
+    <body>
+        <h3>Random Text</h3>
+        <div class="box">
+            <p id="text">TEXTING</p>
+        </div>
+        <div class="animate">
+            <p id="word">CS:GO</p> 
+        </div>
+        <br>
+        <div class="random">
+        </div>
+        <br>
+    </body>
+</html>
