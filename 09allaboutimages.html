@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="max-width=device-max-width, initial-scale=1.0">
+    <title>AllAboutImages</title>
+</head>
+<style>
+    html{
+      background-image:url("SmartBuilding.jpg");
+    
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+    }
+    .image1{
+        background-image: url("backgroumdbuilding.jpg");
+        height:400px;
+        width:400px;
+        background-size: 100% 100%;
+    }
+    .box1{
+        position:absolute;
+        max-height:20px;
+        max-width:20px;
+    }
+    #img1{
+        max-height:20px;
+        max-width:20px;
+    }
+    .box2{
+        position:relative;
+        top:50px;
+        margin:10px;
+        visibility:hidden;
+        max-height:50px;
+        max-width:50px;
+        transition: all 1s ease-in-out;
+        opacity:0;
+    }
+    #img2{
+        max-height: 200px;
+        max-width:200px;
+    }
+    .box1:hover .box2{
+        opacity:1;
+        visibility:visible;
+    }
+    .box3{
+        position:absolute;
+        top:40%;
+        left:60%;
+        max-height: 200px;
+        max-width:200px
+    }
+    #img3{
+        max-height:200px;
+        max-width:200px;
+        border: 5px solid #ddd;
+        padding:1px;
+        border-radius:4px;
+    }
+    #img3:hover{
+        box-shadow:0px 0px 100px 20px rgba(0,255,0,0.9);
+    }
+    .box4{
+        position:absolute;
+        top:5%;
+        left:60%;
+        max-height: 200px;
+        max-width:200px
+    }
+    #img4{
+        max-height:200px;
+        max-width:200px;
+        border: 5px solid #ddd;
+        padding:1px;
+        border-radius:4px;
+    }
+    #img4:hover{
+        box-shadow:0px 0px 100px 20px rgba(233, 5, 183, 0.9);
+    }
+    .box5{
+        position:absolute;
+        top:75%;
+        left:60%;
+        max-height: 200px;
+        max-width:200px
+    }
+    #img5{
+        max-height:200px;
+        max-width:200px;
+        border: 5px solid #ddd;
+        padding:1px;
+        border-radius:50%;
+    }
+    #img5:hover{
+        box-shadow:0px 0px 100px 20px rgba(255, 15, 15, 0.9);
+    }
+</style>
+<body>
+    <div class=id1>
+        <div class="image1">
+            <p>Hello World!</p>
+        </div>
+    </div>
+    <div class="box1">
+        <img id="img1" src="scblogo.jpg" alt="supercarblondielogo">
+        <div class="box2">
+            <img id="img2" src="scb.jpg" alt="blondiebig">
+        </div>
+    </div>
+    <div class="box3">
+        <img id="img3" src="backgroumdbuilding.jpg" alt="building">
+    </div>
+    <div class="box4">
+        <img id="img4" src="cs_logo.jpg" alt="building">
+    </div>
+    <div class="box5">
+        <img id="img5" src="ak_hogwash.jfif" alt="building">
+    </div>
+</body>
+</html>

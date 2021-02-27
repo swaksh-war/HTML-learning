@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /*declaring and basic stying*/
+    .line1{
+        height:300px;
+        width:8px;
+        border-radius:6px;
+        background-color:black;
+        position:absolute;
+        top:-4%;
+        left:45%;
+        transform:rotate(20deg);
+        animation-name:line1;
+        animation-duration:1s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: ease-in-out;
+    }
+    .line2{
+        height:300px;
+        width:8px;
+        border-radius:6px;
+        background-color:black;
+        position:absolute;
+        top:-7%;
+        left:54%;
+        transform:rotate(-40deg);
+        animation-name:line2;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: ease-in-out;
+    }
+    .box1{
+        width:300px;
+        height:300px;
+        background-color:aqua;
+        position: absolute;
+        top:33%;
+        left:29%;
+        transform:rotate(20deg);
+        animation-name:box1;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: ease-in-out;
+    }
+    .box2{
+        width:300px;
+        height:300px;
+        background-color:rgb(46, 14, 187);
+        position: absolute;
+        top:26%;
+        left:56%;
+        transform:rotate(-30deg);
+        animation-name:box2;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: ease-in-out;
+    }
+    /*animating every container and its elements*/
+    @keyframes line1{
+        0%{transform:rotate(20deg);top:-4%;left:45%;}
+        100%{transform: rotate(-50deg);top:-9%;left:54%;}
+    }
+    @keyframes box1{
+        0%{
+            top:33%;
+            left:29%;
+            transform:rotate(20deg);
+            background-color:aqua;
+        }
+        100%{
+            top:15%;
+            left:60%;
+            transform:rotate(-50deg);
+            background-color:rgb(46, 14, 187);
+        }
+    }
+    @keyframes line2{
+        0%{
+            top:-7%;
+            left:54%;
+            transform:rotate(-40deg);
+        }
+        100%{
+            top:-4%;
+            left:45%;
+            transform:rotate(20deg);
+        }
+    }
+    @keyframes box2{
+        0%{
+            top:26%;
+            left:56%;
+            transform:rotate(-30deg);
+            background-color:rgb(46, 14, 187);
+        }
+        100%{
+            top:33%;
+            left:29%;
+            transform:rotate(20deg);
+            background-color:aqua;
+        }
+    }
+
+</style>
+<body>
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="pin1"></div>
+    <div class="pin2"></div>
+    <div class="box1"><h2>BOX1</h2><img src="rifle.png" height="100px" width="100px" ></div>
+    <div class="box2"><h2>BOX2</h2><img src="bullet.png" height="100px" width="100px"></div>
+    
+</body>
+</html>

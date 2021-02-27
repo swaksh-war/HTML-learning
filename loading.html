@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loading</title>
+</head>
+<style>
+.load{
+    border:5px solid white;
+    border-radius:50%;
+    height:30px;
+    width:30px;
+    border-top:5px solid blue;
+    animation-name:load;
+    animation-duration:1s;
+    animation-iteration-count: infinite;
+}
+@keyframes load{
+    0%{transform:rotate(0deg);
+        border-top:5px solid blue;
+    }
+    50%{transform:rotate(180deg);
+        border-top:5px solid red;
+    }
+    100%{transform:rotate(360deg);
+        border-top:5px solid blue;
+    }
+}
+</style>
+<body>
+    <div class="load"></div>
+    
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>its all about button brotha</title>
+</head>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .button{
+        border:none;
+        padding:8px 16px;
+        text-decoration:none;
+        color:black;
+        background-color:blue;
+        margin:5px;
+        display:inline-block;
+        text-align:center;
+        font-size:16px;
+        transition:all 0.3s ease-in-out;
+        cursor:pointer;
+        float:left;
+    }
+    .button span{
+        cursor:pointer;
+        display:inline-block;
+        position: relative;
+        transition: 0.5s;
+    }
+    .button span:after{
+        content:'\00bb';
+        position: absolute;
+        opacity:0;
+        top:0;
+        right:-20px;
+        transition: 0.5s;
+    }
+    .button:hover span{
+        padding-right:25px;
+    }
+    .button:hover span:after{
+        opacity:1;
+        right:0;
+    }
+
+</style>
+<body>
+    <button class="button">Button</button>
+    <a class="button" href="#">Button1</a>
+    <button class="button"><span>Button2</span></button>
+</body>
+</html>
+
+  
+  
+  
+  
+  
